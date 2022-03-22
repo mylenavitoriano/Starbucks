@@ -1,10 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+$verde: #017143;
+$preto: #333;
+$branco: #fff;
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  transition: all ease 0.5s;
+}
+
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $verde;
+  clip-path: circle(45rem at right 55rem);
+  transition: all ease 0.4s;
 }
 
 section{
@@ -15,7 +31,7 @@ section{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: #fff;
+  background: $branco;
 
   header{
     position: absolute;
@@ -31,22 +47,153 @@ section{
       position: relative;
       max-width: 5rem;
     }
-  
-    ul{
-      position: relative;
+
+    .navbar{
       display: flex;
-  
-      li{
-        list-style: none;
-  
-        a{
-          display: inline-block;
-          color: #333;
-          font-weight: 400;
-          margin-left: 2.5rem;
-          text-decoration: none;
+      align-items: center;
+
+      ul{
+        position: relative;
+        display: flex;
+        margin-right: 2.5rem;
+    
+        li{
+          list-style: none;
+    
+          a{
+            display: inline-block;
+            color: $preto;
+            font-weight: 400;
+            margin-left: 2.5rem;
+            text-decoration: none;
+          }
+        }
+      }
+
+      .button_tema{
+        width: 2.5rem;
+        padding: .2rem;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      .dark{
+        display: block;
+        background: $preto;
+      }
+
+      .light{
+        display: none;
+        background: $branco;
+      }
+    }    
+  }
+
+  .content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .textBox{
+      position: relative;
+      max-width: 37.5rem;
+      color: $preto;
+
+      h2{
+        
+        font-size: 4em;
+        line-height: 1.4em;
+        font-weight: 500;
+      
+        span{
+          color: $verde;
+          font-size: 1.2em;
+          font-weight: 900;
+        }
+      }
+
+      a{
+        display: inline-block;
+        margin-top: 1.25rem;
+        padding: .5rem 1.25rem;
+        background: $verde;
+        color: $branco;
+        border-radius: 2.5rem;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-decoration: none;
+      }
+    }
+
+    .imgBox{
+      width: 45rem;
+      display: flex;
+      justify-content: center;
+      padding-right: 1.125rem;
+      margin-top: 1rem;
+      align-items: center;
+
+      img{
+        width: 40%;
+        max-width: 20rem;
+        transition: 1s;
+      }
+    }
+  }
+
+  .thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 1.25rem;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: flex-end;
+
+    li{
+      list-style: none;
+      display: inline-block;
+      margin: 0 1.25rem;
+      cursor: pointer;
+      transition: all ease 0.5s;
+
+      &:hover{
+        transform: translateY(-1rem);
+        filter: drop-shadow(.2rem 3rem 2rem #919191);
+      }
+
+      img{
+        max-width: 3.75rem;
+        
+      }
+    }
+  }
+
+  .sci{
+    position: absolute;
+    top: 50%;
+    right: 1.875rem;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    li{
+      list-style: none;
+
+      a{
+        display: inline-block;
+        margin: 0.3rem 0;
+        transform: scale(0.6);
+
+        img{
+          max-width: 4rem;
         }
       }
     }
   }
+
+  
 }
