@@ -117,7 +117,7 @@ section .content .imgBox {
   align-items: center;
 }
 section .content .imgBox img {
-  width: 40%;
+  width: 50%;
   max-width: 20rem;
   transition: 1s;
 }
