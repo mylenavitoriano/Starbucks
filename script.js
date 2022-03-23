@@ -1,8 +1,7 @@
 function imgSlider(anything, color){
     document.querySelector('.starbucks').src = 'images/'+anything
 
-    const circle = document.querySelector('.circle')
-    circle.style.backgroundColor = color
+    document.querySelector('.circle').style.backgroundColor = color
 }
 
 function mudar_tema(background, color, display_dark, display_light, imagem=""){

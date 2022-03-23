@@ -117,8 +117,7 @@ section .content .imgBox {
   align-items: center;
 }
 section .content .imgBox img {
-  width: 35%;
-  max-width: 20rem;
+  max-width: 35%;
   transition: 1s;
 }
 section .thumb {
@@ -141,7 +140,7 @@ section .thumb li:hover {
   filter: drop-shadow(0.2rem 3rem 2rem #919191);
 }
 section .thumb li img {
-  max-width: 3rem;
+  max-width: 3.5rem;
 }
 section .sci {
   position: absolute;
@@ -163,4 +162,62 @@ section .sci li a {
 }
 section .sci li a img {
   max-width: 4rem;
+}
+
+@media (max-width: 991px) {
+  .circle {
+    clip-path: circle(50% at center bottom);
+  }
+
+  section {
+    padding: 1.25rem 1.25rem 7.5rem;
+  }
+  section header {
+    padding: 1.25rem;
+  }
+  section header .logo {
+    max-width: 3.75rem;
+  }
+  section header .navbar ul {
+    display: none;
+  }
+  section .content {
+    flex-direction: column;
+    margin-top: 6.25rem;
+  }
+  section .content .textBox {
+    max-width: 100%;
+  }
+  section .content .textBox h2 {
+    font-size: 2.5em;
+    margin-bottom: 1rem;
+  }
+  section .content .imgBox {
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+  section .content .imgBox img {
+    max-width: 18rem;
+  }
+  section .sci {
+    background: #017143;
+    right: 0;
+    width: 3.125rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}
+@media (max-width: 600px) {
+  section .content {
+    margin-top: 0;
+  }
+  section .content .imgBox {
+    max-width: 100%;
+  }
+  section .content .imgBox img {
+    max-width: 12rem;
+  }
+  section .thumb li img {
+    max-width: 3rem;
+  }
 }
