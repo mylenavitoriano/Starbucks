@@ -109,7 +109,7 @@ section .content .textBox a {
   text-decoration: none;
 }
 section .content .imgBox {
-  width: 38rem;
+  width: 60rem;
   display: flex;
   justify-content: center;
   padding-right: 1.125rem;
@@ -117,7 +117,7 @@ section .content .imgBox {
   align-items: center;
 }
 section .content .imgBox img {
-  width: 40%;
+  width: 35%;
   max-width: 20rem;
   transition: 1s;
 }
@@ -141,7 +141,7 @@ section .thumb li:hover {
   filter: drop-shadow(0.2rem 3rem 2rem #919191);
 }
 section .thumb li img {
-  max-width: 3.75rem;
+  max-width: 3rem;
 }
 section .sci {
   position: absolute;
