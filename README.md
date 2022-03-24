@@ -1,5 +1,4 @@
 # Starbucks
-https://mylenavitoriano.github.io/Starbucks/
 
 Projeto baseado em produtos da empresa Starbucks, layout criado para fins educativos.
 Realizei a estilização em SASS para fixar meu conhecimento e coloquei em prática a mudança de tema do site (modo dark e light) para aprendizado.
