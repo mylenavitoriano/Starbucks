@@ -9,7 +9,7 @@ function mudar_tema(background, color, display_dark, display_light, imagem="", f
 
     const nav = document.querySelectorAll('header ul li a')
     for(const element of nav){
-        element.style.color = color
+        element.style.color = color 
     }
 
     document.querySelector('.textBox').style.color = color
