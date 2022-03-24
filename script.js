@@ -19,6 +19,7 @@ function mudar_tema(background, color, display_dark, display_light, imagem="", f
 
     document.querySelector('.navigation').style.background = background
     document.querySelector('.toggle').style.filter = "invert("+filter+")"
+    document.querySelector('.toggle.active').style.filter = "invert("+filter+")"
 
     document.querySelector('img.dark').style.display = display_dark
     document.querySelector('img.light').style.display = display_light
